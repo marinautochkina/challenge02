@@ -1,0 +1,221 @@
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color:  black;
+  }
+  
+  header {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    background-color:  black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:  #a1b0b0;
+    text-shadow: 1px 1px 2px black;
+  }
+  .marina {
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 20px;
+  }
+  .avatar {
+    width:80px;
+    height: 80px;
+    border-radius: 80px;
+  }
+  h1 {
+    margin-left: 15px; 
+    font-weight: 100;
+  }
+  nav ul {
+    
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+  }
+  
+  nav a {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .subtitle {
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 2;
+    padding-bottom:60px;
+  }
+  #mystory {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+  }
+  h2 {
+    width: 25vh;
+    rotate: -90deg;
+    letter-spacing:2px;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-right: 20px;
+  }
+.contour {
+    width: 1200px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    padding-top: 40px;
+    padding-left: 100px;
+    margin-bottom: 80px;
+}
+ #projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+ .project {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 40px;
+
+ }
+ .info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+ }
+ .project:hover {
+    transform: scale(1.6);
+ }
+
+ #contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+ }
+ .input {
+    list-style: none;
+ }
+ input {
+    color: black;
+ }
+ button{
+    margin-left: 100px;
+    background-color: black;
+    border: 1 solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+ }
+ footer {
+    text-align: center;
+ }
+ @media screen and (max-width: 1280px) {
+    .contour {
+      width: 100%;
+    }
+    header {
+        font-size:small;
+    }
+    nav a{
+        font-size: small;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    body {
+        display:flex;
+        align-items: center;
+    }
+    section {
+        width: 350px;
+        display:flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 0px;
+    }
+    .avatar {
+        width:50px;
+        height: 50px;
+        border-radius: 60px;
+      }
+    h1 {
+        margin-left: 15px;
+        font-size: 20px;
+      }
+    nav ul {
+        display: flex;
+        justify-content: right;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .contour {
+        width: 340px;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 40px;
+        padding-right: 20px;
+    }
+    .project {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom: 1px solid white;
+        padding: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 40px;
+    }
+    h2 {
+        rotate: 0deg;
+    
+    }
+  }
